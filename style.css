@@ -1,0 +1,185 @@
+/* Reset and Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Bookman Old Style', serif;
+    background-color: #f9fafc;
+    color: #333;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Layout */
+  .layout {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .profile-pic {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-pic img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  
+  .sidebar {
+    background: linear-gradient(135deg, #11cbcb, #fcca25);
+    color: white;
+    width: 250px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 30px;
+  }
+  
+  .sidebar nav a {
+    display: block;
+    color: white;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .sidebar nav a:hover {
+    color: #ffd700;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  section {
+    margin-bottom: 80px;
+  }
+  
+  /* About Me Section */
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .about-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 250px;
+  }
+  
+  .about-text h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #cb7111;
+  }
+  
+  .about-text p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  /* Projects Section */
+  .project-card {
+    background: #ffffff;
+    padding: 20px;
+    border: 2px solid #cbc211; /* Added border */
+    border-radius:5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-4px);
+    background-color: #119ccb;
+    color: #ffffff;
+  }
+  
+  
+  /* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .skill-card {
+    background: #ffffff;
+    padding: 20px;
+    border: 2px solid #cba011;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: #1411cb;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+    background-color: #118dcb;
+    color: #ffffff;
+  }
+  
+  /* Resume and Contact Section */
+  .btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background: #11cbb2;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #fcb425;
+  }
+  
+  /* Testimonials */
+  .testimonial-card {
+    background: #fff3cd;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 5px solid #cba011;
+    font-style: italic;
+    border-radius: 8px;
+  }
+  
